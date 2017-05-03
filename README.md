@@ -1,5 +1,5 @@
 ## Arc-swift
-This repository contains an implementation of the parsers described in [Arc-swift: A Novel Transition System for Dependency Parsing](). 
+This repository contains an implementation of the parsers described in [Arc-swift: A Novel Transition System for Dependency Parsing](https://nlp.stanford.edu/pubs/qi2017arcswift.pdf).
 
 Running the parsers requires Tensorflow 1.0 or above. The data preparation script also requires a working Java 8 installation to run [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html). Other Python dependencies are included in `requirements.txt`, and can be installed via `pip` by running
 
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ##### Penn Treebank
 
-We provide code for converting the Wall Street Journal section of Penn Treebank into [Stanford Dependencies](https://nlp.stanford.edu/software/stanford-dependencies.shtml). 
+We provide code for converting the Wall Street Journal section of Penn Treebank into [Stanford Dependencies](https://nlp.stanford.edu/software/stanford-dependencies.shtml).
 
 To use the code, you first need to obtain the corresponding parse trees from LDC, make the standard train/dev/test split (Sections 02-21 for training, 22 for development, and 23 for testing). Copy the splits to `utils/ptb3-wsj` and name them `ptb3-wsj-train.trees`, `ptb3-wsj-dev.trees`, and `ptb3-wsj-test.trees`, respectively, then run the following scripts
 
@@ -69,7 +69,7 @@ Note that if you're using the GPU, you might want to specify `CUDA_VISIBLE_DEVIC
 python train_parser.py -h
 ```
 
-To train parsers for other transition systems, simply replace the `--transsys` argument with the short name for the transition system you are interested in. 
+To train parsers for other transition systems, simply replace the `--transsys` argument with the short name for the transition system you are interested in.
 
 |Short name |Transition system |
 |-----------|------------------|
