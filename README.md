@@ -1,5 +1,14 @@
 ## Arc-swift
-This repository contains an implementation of the parsers described in [Arc-swift: A Novel Transition System for Dependency Parsing](https://nlp.stanford.edu/pubs/qi2017arcswift.pdf).
+This repository contains an implementation of the parsers described in [Arc-swift: A Novel Transition System for Dependency Parsing](https://nlp.stanford.edu/pubs/qi2017arcswift.pdf). If you use arc-swift in your work, please cite us with the BibTeX item below.
+
+```
+@inproceedings{qi2017arcswift,
+  title={Arc-swift: A Novel Transition System for Dependency Parsing},
+  author={Qi, Peng and Manning, Christopher D.},
+  booktitle={Proceedings of the 55th Annual Meeting of Association for Computational Linguistics},
+  year={2017}
+}
+```
 
 Running the parsers requires Tensorflow 1.0 or above. The data preparation script also requires a working Java 8 installation to run [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html). Other Python dependencies are included in `requirements.txt`, and can be installed via `pip` by running
 
